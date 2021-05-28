@@ -14,6 +14,47 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <div class="input-group mb-3">
+                            <input type="file" id="loadCharacter" class="form-control" onchange="loadCharacter()">
+                            <label for="loadCharacter" class="input-group-text">Upload Character</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <div class="input-group mb-3">
+                            <input type="file" id="loadBackground" class="form-control" onchange="loadBackground()">
+                            <label for="loadBackground" class="input-group-text">Upload Background</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <canvas id="character" class="canvas"></canvas>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <canvas id="background" class="canvas"></canvas>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <button type="button" id="merge" class="btn btn-primary" value="Merge Images" onclick="merge()" data-bs-toggle="tooltip" data-bs-placement="top" title="Remove Green Background and Add New Background">Merge Images</button>
+                        <br>
+                        <a id="save" class="btn btn-success" href="" download="result.jpg" onclick="save(this)">Save Image</a>
+                        <br>
+                        <button type="button" id="reset" class="btn btn-danger" value="Reset Images" onclick="reset()">Reset Images</button>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <canvas id="result" class="canvas"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- For Image Processing -->
     <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
 
