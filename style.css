@@ -1,0 +1,27 @@
+.form-control, .input-group-text, .btn {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 3% 0;
+}
+
+.canvas {
+    background-color: lightgray;
+    border: 1px solid black;
+    width: 90%;
+    height: 300px;
+}
+
+.btn {
+    width: 20rem;
+}
+
+/* For Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    border-left: 1px solid #E6ECF8;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color:#d6872c;
+}
